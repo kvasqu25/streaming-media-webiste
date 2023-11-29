@@ -3,72 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>MuzakMaker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuzakMaker</title>
     <link rel="stylesheet" href="styles.css">
     <title>Streaming Media</title>
 </head>
 
 <body>
-    Smooth Jazz
-This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.
+<header>
+    <h1>Smooth Jazz</h1>
+    <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+  </header>
 
-MuzakMaker
-Trending Songs
-Your playlists
-Curated Playlists
-duke-silver.png
-Trending Songs
-Aloma
-Artist Cali
-aloma-cover.png
-aloma.mp3
+  <nav>
+    <h2>Main Navigation</h2>
+    <input type="checkbox" id="dropdown">
+    <label for="dropdown"><span></span></label>
+    <ul>
+        <li><a href="#home">MuzakMaker</a></li>
+        <li><a href="#trending">Trending<br>Songs</a></li>
+        <li><a href="#playlists">Your<br>playlists</a></li>
+        <li><a href="#curated">Curated<br>Playlists</a></li>
+        <li><a href="user"><img src="images/duke-silver.png" alt=""></a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="trending">
+        <h2>Trending Songs</h2>
+        <div class="scroll">
+            <section>
+                <div>
+                <h3>Aloma</h3> 
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Cali</dd>
+                    </dl>
+                </div>
+                <img src="images/aloma-cover.png" alt="white dove on black background" width="311" height="311">
+                <audio controls src="audio/aloma.mp3"></audio>
+            </section>
 
-My Road
-Artist Nesterouk
-my-road-cover.png
-my-road.mp3
+            <section>
+                <div>
+                <h3>My Road</h3> 
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Nesterouk</dd>
+                    </dl>
+                </div>
+                <img src="images/my-road-cover.png" alt="middle of the road in a desert highway" width="311" height="311">
+                <audio controls src="audio/my-road.mp3"></audio>
+            </section>
+            
+            <section>
+                <div>
+                <h3>Papaya</h3> 
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Dredstudio</dd>
+                    </dl>
+                </div>
+                <img src="images/papaya-cover.png" alt="papaya cover" width="311" height="311">
+                <audio controls src="audio/papaya.mp3"></audio>
+            </section>
 
-Papaya
-Artist Dredstudio
-papaya-cover.png
-papaya.mp3
+            <section>
+                <div>
+                <h3>Smoothies</h3> 
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Black Rhomb</dd>
+                    </dl>
+                </div>
+                <img src="images/smoothies-cover.png" alt="smoothies cover" width="311" height="311">
+                <audio controls src="audio/smoothies.mp3"></audio>
+            </section>
 
-Smoothies
-Artist Black Rhomb
-smoothies-cover.png
-smoothies.mp3
+            <section>
+                <div>
+                <h3>Successful Performance</h3> 
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Ricky Bombino</dd>
+                    </dl>
+                </div>
+                <img src="images/successful-performance-cover.png" alt="successful performance cover" width="311" height="311">
+                <audio controls src="audio/successful-performance.mp3"></audio>
+            </section>
+        </div>
+        <button type="button" class="more">More trending</button>
+    </section>
+    <section id="playlists">
+        <h2>Your Playlists</h2>
+        <div class="scroll">
+            <section>
+                <img src="images/best-of-2020-cover.png" alt="numbers 2020 on black background" width="146" height="116">
+                <h3>Best of 2020</h3> 
+                <p>The music that got you through the lock down.</p>
+            </section>
 
-Successful Performance
-Artist Ricky Bombino
-successful-performance-cover.png
-successful-performance.mp3
+            <section>
+                <img src="images/pumpkin-spice-cover.png" alt="latte in a white coffee mug on a wood table" width="146" height="116">
+                <h3>Pumpkin Spice</h3> 
+                <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+            </section>
 
-More trending
-Your Playlists
-best-of-2020-cover.png
-Best of 2020
-The music that got you through the lock down.
+            <section>
+                <img src="images/quiet-storm-cover.png" alt="thunder clouds with lightning" width="146" height="116">
+                <h3>Quiet Storm</h3> 
+                <p>Slow tempos and relaxed rhythms.</p>
+            </section>
 
+            <section>
+                <img src="images/smooth-jazz-cover.png" alt="Older man with glasses and green shirt looking to the left with a gray background" width="146" height="116">
+                <h3>Smooth Jazz</h3> 
+                <p>The pioneers of smooth jazz.</p>
+            </section>
 
-pumpkin-spice-cover.png
-Pumpkin Spice
-Creamy and spicy, just like your favorite autumnal latte.
-
-
-quiet-storm-cover.png
-Quiet Storm
-Slow tempos and relaxed rhythms. 
-
-
-smooth-jazz-cover.png
-Smooth Jazz
-The pioneers of smooth jazz
-
-
-smooth-study-cover.png
-Smooth Study
-Background music to keep you going while you study. 
+            <section>
+                <img src="images/smooth-study-cover.png" alt="Man typing on laptop on a wood table" width="146" height="116">
+                <h3>Smooth Study</h3> 
+                <p>Background music to keep you going while you study.</p>
+            </section>
+            </div>
+            <a href="#" class="more">All your playlist</a>
+            </section>
 
 
 All your playlists
