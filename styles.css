@@ -1,0 +1,450 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    background-color: #020659;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+main{
+    width: 375px;
+}
+
+header{
+    background-color: #2104D9;
+    background: linear-gradient(90deg, rgba(33,4,217,1) 0%, rgba(2,6,89,1) 33%, rgba(2,6,89,1) 66%, rgba(0,0,0,1) 100%);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 375px;
+}
+
+nav{
+    width: 375px;
+    background-color: #030A8C;
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-transform: uppercase;
+}
+
+nav h2{
+    visibility: hidden;
+    height: 1px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    background: #2104D9;
+    list-style: none;
+    
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    padding: 20px 20px;
+   
+}
+
+footer{
+width: 375px;
+}
+
+a:hover{
+    background: #590242;
+}
+
+[href="#home"]{
+    font-variant: small-caps;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    text-transform: capitalize;
+    font-size: 30px;
+    z-index: 1;
+    padding: 16px 16px;
+
+}
+
+
+input:hover{
+    background: #590242;
+}
+
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 25px 20px;
+    position: relative;
+   ;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+
+.scroll {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll section {
+    margin: 10px;
+    position: relative;
+}
+
+.scroll div{
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+
+dl {
+    display: flex;
+}
+
+dt {
+    padding-right: 5px;
+}
+
+audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+}
+
+.more {
+    text-decoration: none;
+    background-color: #590242;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: 10px 0 30px 32px;
+}
+
+.more:hover {
+    background-color: #020659;
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button{
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-enclosure{
+    background-color: rgba(255,255,255,.5);
+}
+
+#trending ::-webkit-scrollbar {
+    width: 15px;
+}
+#trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+#trending ::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+    background: #020659;
+}
+
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #020659;
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+#playlists .scroll{
+    background-color: #2699FB;
+}
+
+#curated .scroll{
+    background-color: #030A8C;
+}
+
+#curated section{
+    background-color: #020873;
+    padding: 10px;
+}
+
+#playlist section{
+    background-color: #0d8dfb;
+    padding: 10px;
+}
+
+
+h1{
+    font-size: 22px;
+    line-height: 2em;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2, h3{
+    font-size: 1em;
+    color: #590242;
+    
+}
+
+h3{
+    line-height: 1em;
+    color: #ffffff;
+}
+
+header p, h1, h2{
+    padding: 0 30px 0 30px;
+
+}
+header, p{
+    color: #ffffff;
+    line-height: 1.25em;
+}
+
+#trending h2{
+    margin-top: 20px;
+}
+
+#trending h3, dt, dd{
+    color: #590242;
+    font-size: 1em;
+    padding: 5px;
+}
+
+dt{
+    color: #590242;
+    font-style: italic;
+}
+
+
+p, dl{
+    font-size: 1em;
+}
+
+footer p{
+    font-size: .75em;
+    color: #590242;
+    text-align: center;
+    padding: 20px;
+}
+
+#playlists h3, #playlists p{
+    text-align: center;
+    padding: 5px;
+}
+
+#curated h3, #curated p{
+    text-align: center;
+    padding: 5px;
+}
+
+
+@media screen and (min-width:834px) {
+    body {
+        width: 834px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 417px 417px;
+    }
+    nav {
+        width: 834px;
+    }
+    nav a {
+        display: block;
+    }
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px;
+        align-items: center;
+        width: 834px;
+    }
+    .more {
+        float: right;
+    }
+    label span, input {
+        display: none;
+    }
+    li {
+        margin: 0px;
+        padding: 0px;
+    }
+    [href="home"], li a{
+        box-sizing: border-box;
+        height: 100%;
+        padding: 12px;
+    }
+    [href="home"] {
+        position: static;
+    }
+    #trending {
+        width: 834px;
+    }
+    #playlists {
+        width: 350px;
+    }
+    #curated {
+        width: 350px;
+    }
+    #playlists p, #curated p {
+        position: absolute;
+        padding-right: 35px;
+        top: 27px;
+        left: 190px;
+        text-align: center;
+    }
+    #playlists h3, #curated h3 {
+        position: absolute;
+        top: -15px;
+        left: 190px;
+        
+    }
+    #playlists section, #curated section {
+        width: 350px;
+        height: 115px;
+    }
+    #playlists img, #curated img {
+        float: left;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+    #playlists .scroll, #curated .scroll {
+        grid-template-columns: 417px;
+        row-gap: 100px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 510px;
+    }
+}
