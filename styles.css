@@ -108,25 +108,6 @@ label span:before {
 label span:after {
     top: -5px;
 }
-input {
-    display: none;
-}
-input:checked ~ ul {
-    max-height: 500px;
-}
-input:checked ~ label span {
-    background: transparent;
-}
-input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
-input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-}
-
 #trending h2 {
     padding-top: 30px;
 }
@@ -167,6 +148,25 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 5px;
     height: 50px;
     width: 350px;
+}
+
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
 }
 
 dl {
