@@ -209,13 +209,13 @@ audio {
     text-align: center;
 }
 
-.csongs img {
+.coversongs img {
     padding-right: 10px;
 }
-.csongs h3 {
+.coversongs h3 {
     text-align: center;
 }
-.csongs p {
+.coversongs p {
     text-align: center;
 }
 
@@ -225,7 +225,7 @@ audio {
     padding-right: 5px;
     text-align: center;
 }
-.csongs {
+.coversongs {
     background-color: #020873;
     padding: 10px;
     border: 5px solid #030abc;
