@@ -184,7 +184,7 @@ audio {
     position: absolute;
     bottom: 150px;
     left: 5px;
-    opacity: 0.9;
+    opacity: 1;
 }
 .yourplaylist {
     background-color: #2699FB;
