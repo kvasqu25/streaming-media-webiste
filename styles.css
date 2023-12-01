@@ -278,7 +278,13 @@ footer p {
     text-align: center;
     color: #590242;   
 }
-
+.center-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 @media screen and (min-width:834px) {
     ul {
@@ -308,132 +314,4 @@ html {
 
 body {
     margin: 0 auto;
-}
-
-/* Styling for the header */
-header {
-    color: #ffffff;
-}
-
-#jazzheader {
-    background-image: linear-gradient(to right, #2104D9, #030ABC, #020659);
-    padding: 15px;
-}
-
-/* Styling for the navigation bar */
-.navbar {
-    background-image: linear-gradient(to left, #2104D9, #030ABC, #020659);
-    padding-bottom: 5px;
-}
-
-nav ul {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    width: 90%;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.nav1 {
-    color: #ffffff;
-    font-size: 1.25em;
-    font-variant: small-caps;
-    text-transform: capitalize;
-}
-
-a {
-    display: block;
-    width: 20%;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    padding: 5px;
-}
-
-ul li:hover {
-    background-color: #590242;
-}
-
-/* Styling for the main content */
-main {
-    background-color: #ffffff;
-    padding-left: 10px;
-}
-
-/* Styling for the trending section */
-#trending h2 {
-    padding-top: 30px;
-}
-
-#trending h3 {
-    margin-top: 0;
-}
-
-.button {
-    display: block;
-    text-align: center;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: smaller;
-    width: 200px;
-    color: #ffffff;
-    border: 1px solid #590242;
-    background-color: #590242;
-}
-
-/* Styling for playlists and curated sections */
-.allplaylist {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-/* Styling for scrollbar */
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 15px #590242;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #590242;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #020659;
-}
-
-/* Styling for the footer */
-footer {
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-footer p {
-    font-size: 0.75em;
-    text-align: center;
-    color: #590242;
-}
-
-/* Responsive design for larger screens */
-@media screen and (min-width: 834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    label span, input {
-        display: none;
-    }
-    .yourplaylist,
-    .cplaylist {
-        text-align: left;
-    }
 }
