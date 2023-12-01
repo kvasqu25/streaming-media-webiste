@@ -300,3 +300,28 @@ footer p {
 
 
 }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+    .button {
+        width: 100%; /* Adjust the width for smaller screens */
+        text-align: left; /* Align the button to the left for smaller screens */
+    }
+    
+    .allplaylist p.button {
+        text-align: right; /* Align the button to the right for larger screens */
+    }
+
+    .cplaylist p.button {
+        text-align: right; /* Align the button to the right for larger screens */
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .button {
+        width: 200px; /* Reset the width for larger screens */
+        text-align: right; /* Align the button to the right for larger screens */
+    }
+
+    .allplaylist p.button, .cplaylist p.button {
+        text-align: right; /* Align the button to the right for larger screens */
+    }
+}
