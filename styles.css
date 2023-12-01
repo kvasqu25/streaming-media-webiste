@@ -132,19 +132,19 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 #trending h3 {
-    margin-top: 0;
+    margin-left: 12px;
 }
 
 .button {
     display: block;
-    text-align: right;
-    color: #ffffff;
-    border: 1px solid #590242;
-    background-color: #590242;
+    text-align: center;
     border-radius: 10px;
     padding: 5px;
     font-size: smaller;
     width: 200px;
+    color: #ffffff;
+    border: 1px solid #590242;
+    background-color: #590242;
 
 }
 
