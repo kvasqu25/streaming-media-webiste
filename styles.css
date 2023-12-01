@@ -132,7 +132,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 #trending h3 {
-    margin-left: 12px;
+    margin-top: 0;
 }
 
 .button {
