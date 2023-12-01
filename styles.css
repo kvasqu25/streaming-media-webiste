@@ -29,10 +29,6 @@ a {
 ul li:hover {
     background-color: #590242;
 }
-.navbar {
-    background-image: linear-gradient(to left, #2104D9, #030ABC, #020659);
-    padding-bottom: 5px;
-}
 
 .nav1 {
     color:#ffffff;
@@ -41,7 +37,6 @@ ul li:hover {
     text-transform: capitalize;
 }
 
-
 nav ul {
     display: inline-flex;
     text-align: center;
@@ -49,6 +44,10 @@ nav ul {
     width: 90%;
     text-transform: uppercase;
     color: #ffffff;
+}
+.navbar {
+    background-image: linear-gradient(to left, #2104D9, #030ABC, #020659);
+    padding-bottom: 5px;
 }
 
 h1, h2, h3 {
@@ -138,7 +137,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 .button {
     display: block;
-    text-align: center;
+    text-align: right;
     color: #ffffff;
     border: 1px solid #590242;
     background-color: #590242;
